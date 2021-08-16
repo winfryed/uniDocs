@@ -9,10 +9,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
 % Document
 \begin{document}
-    \section{Definiton 3.1.1 - K-Lineare Abbildung}
+    \title{Lineare Abbildung und Dimensionsformel}
+    \maketitle
+    \section{K-Lineare Abbildung}
     Eine Funktion  $f:V\rightarrow W$ \nolinebreak heißt K-Lineare Abbildung wenn gilt:
 
     \[\forall v,w\in V, \lambda \in K : f(v+w) = f(v) + f(w) \wedge f(\lambda v) = \lambda f(x)\]
@@ -34,34 +38,40 @@
     \begin{enumerate}
         \item $rk(A)\rightarrow$ "Anzahl an Linear unabhänigen Spalten einer Matrix"
         \item $Def(A) \rightarrow$ "Anzahl der Spalten - rk(A)"
-        \item $dim(A) \rightarrow$ "Anzahl der Spalten"
+        \item $dim(A) \rightarrow $ "Anzahl der Spalten"
     \end{enumerate}
 
+    \newpage
+    \section{Beispiele}
 
-    \subsection{Beispiel}
+    \subsection{K-Lineare Abbildung}
+
+    %Wir betrachten $U:=\{2\alpha+2\alpha X | \alpha \in \mathbb{R}\} \subseteq \mathbb{R}[X]$. \newline
+    %Begründung warum U ein Untervektorraum des $\mathbb{R}$-Vektorraumes $\mathbb{R}[X]$ ist.
+
+    Gegeben sei die Funktion $f:\mathbb{R} \rightarrow \mathbb{R}, f(x) = x^2$. \newline
+    \newline
+    Die Funktion ist nicht $\mathbb{R}$-Linear, denn \newline
+    die Funktion ist $\mathbb{R}$-Linear wenn gilt:
+    \[\forall v,w\in \mathbb{R}, \lambda \in \mathbb{R} : f(v+w) = f(v) + f(w) \wedge f(\lambda v) = \lambda f(x)\]
+    Setzte $v,\lambda=2$ so gilt \newline
+    \[f(\lambda v) = f(2\cdot2)=4^2=16\]
+    \[\lambda f(v) = 2 f(2)=2\cdot 2^2=8\]
+    \[\Rightarrow f(\lambda v) \neq \lambda f(v)\]
+    \hfill $\Box$
+
+    \subsection{Dimensionsformel}
+
+    Sei $A:=\begin{pmatrix}1&1&1&1\\0&2&2&2\\0&3&3&3\\0&4&4&4\end{pmatrix}$ so folgt: \newline
 
 
+    \begin{itemize}
+        \item Dimension : $dim(A) = 4$
+        \item Rang : $rk(A) = 3$
+        \item Defekt: $Def(A) = 1$
+    \end{itemize}
 
-    \[A:=\begin{pmatrix}
-             1&1&1&1\\
-             0&2&2&2\\
-             0&3&3&3\\
-             0&4&4&4
-    \end{pmatrix},\]
 
-    Somit folgt
-
-    Dimension :
-
-    \[dim(A) = 4\]
-
-    Rang :
-
-    \[rk(A) = 3\]
-
-    Defekt:
-
-    \[Def(A) = 1\]
 
 
 
