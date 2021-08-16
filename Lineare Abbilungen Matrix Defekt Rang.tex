@@ -1,0 +1,68 @@
+%! Author = 49176
+%! Date = 16.08.2021
+
+% Preamble
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+
+% Document
+\begin{document}
+    \section{Definiton 3.1.1 - K-Lineare Abbildung}
+    Eine Funktion  $f:V\rightarrow W$ \nolinebreak heißt K-Lineare Abbildung wenn gilt:
+
+    \[\forall v,w\in V, \lambda \in K : f(v+w) = f(v) + f(w) \wedge f(\lambda v) = \lambda f(x)\]
+
+    \section{Dimensionsformel}
+    Definition: $dim(A)=dim(Kern(A))+dim(Bild(A))$
+
+    \subsection{Rang und Defekt einer Matrix}
+
+    Der Defekt von A ist : $Def(A) = dim(Kern(A))$ \newline
+    \newline
+    Der Rang von A ist : $rk(A)=dim(Bild(A))$ \newline
+    \newline
+    $\Rightarrow dim(A)=Def(A)+rk(a)$
+
+
+    \subsection{Faustregeln (Ohne Anspruch auf totale Gültigkeit)}
+
+    \begin{enumerate}
+        \item $rk(A)\rightarrow$ "Anzahl an Linear unabhänigen Spalten einer Matrix"
+        \item $Def(A) \rightarrow$ "Anzahl der Spalten - rk(A)"
+        \item $dim(A) \rightarrow$ "Anzahl der Spalten"
+    \end{enumerate}
+
+
+    \subsection{Beispiel}
+
+
+
+    \[A:=\begin{pmatrix}
+             1&1&1&1\\
+             0&2&2&2\\
+             0&3&3&3\\
+             0&4&4&4
+    \end{pmatrix},\]
+
+    Somit folgt
+
+    Dimension :
+
+    \[dim(A) = 4\]
+
+    Rang :
+
+    \[rk(A) = 3\]
+
+    Defekt:
+
+    \[Def(A) = 1\]
+
+
+
+\end{document}
