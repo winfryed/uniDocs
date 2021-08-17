@@ -1,0 +1,47 @@
+\subsection{Rechenbeispiel}
+Sei $A:=\begin{pmatrix}
+            2&1&1\\
+            1&1&0\\
+            2&0&1
+\end{pmatrix}$, $B:=\begin{pmatrix}
+                            2&2\\
+                            2&2\\
+                            2&1
+\end{pmatrix}$ \newline
+\begin{table}[h!]
+    \begin{tabular}{c|l}
+        & $ \begin{pmatrix}
+                2&2\\
+                2&2\\
+                2&1
+        \end{pmatrix} $ \\[7mm]
+        \hline \\ [-3mm]
+        $ \begin{pmatrix}
+              2&1&1\\
+              1&1&0\\
+              2&0&1
+        \end{pmatrix} $ &
+        $ \begin{pmatrix}
+              2\cdot 2 + 1\cdot 2 + 1\cdot 2&2\cdot 2 + 1\cdot 2 + 1\cdot 1\\
+              1\cdot 2 + 1\cdot 2 + 0\cdot 2&1\cdot 2 + 1\cdot 2 + 0\cdot 1\\
+              2\cdot 2 + 0\cdot 2 + 1\cdot 2&2\cdot 2 + 0\cdot 2 + 1\cdot 1
+        \end{pmatrix} $
+    \end{tabular}\label{tab:table}
+    \newline
+    \newline
+    \newline
+    Somit gilt: \newline \newline
+    $
+        \begin{pmatrix}
+              2\cdot 2 + 1\cdot 2 + 1\cdot 2&2\cdot 2 + 1\cdot 2 + 1\cdot 1\\
+              1\cdot 2 + 1\cdot 2 + 0\cdot 2&1\cdot 2 + 1\cdot 2 + 0\cdot 1\\
+              2\cdot 2 + 0\cdot 2 + 1\cdot 2&2\cdot 2 + 0\cdot 2 + 1\cdot 1
+        \end{pmatrix} = \begin{pmatrix}
+                                    8&7\\
+                                    4&4\\
+                                    6&5
+        \end{pmatrix}
+    $ \newline
+    \newline
+    Die Komponenten werden von außen nach innen paarweise multipliziert und die Paare addiert.
+\end{table}
