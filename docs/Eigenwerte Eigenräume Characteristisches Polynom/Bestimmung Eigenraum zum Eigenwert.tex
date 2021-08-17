@@ -1,0 +1,60 @@
+\section{Bestimmung Eigenraum zum Eigenwert}
+
+\subsection{Rechenvorschrift}
+Seien K ein Körper, $n\in \mathbb{N}_\geq1$ und $A \in M_n(K)$. Dann heißt $\lambda \in K$
+Eigenwert von A, falls $\lambda$ Eigenwert von $f_a$ ist. In diesem Fall ist der Eigenraum
+\[Eig_A(\lambda):=\mathcal{L}(\lambda I_n - A, 0_{K^n})\]
+
+\subsection{Beispielrechnung}
+
+Sei $A := \begin{pmatrix}
+              3&1&-3\\0&-2&1\\0&0&3
+\end{pmatrix}$ \newline
+\newline
+Bestimme den Eigenraum zum kleinsten Eigenwert.
+\begin{enumerate}
+    \item Bestimme das Charakteristische Polynom. \newline \newline
+    $\chi_A(X):=det(XI_n-A)=det\begin{pmatrix}
+                                    X-3&-1&3\\
+                                    0&X+2&-1\\
+                                    0&0&X-3
+    \end{pmatrix}=(X-3)\cdot(X+2)\cdot(X-3)$
+    \item Bestimme die Nullstellen des Polynoms. Hier lassen sich die Nullstellen ablesen mit \newline
+    $\mathcal{L}=\{3,-2\}$ daher sind die Eigenwerte $\lambda_1=3,\lambda_2=-2$.
+    \item Nun bestimmen wir den Eigenraum $Eig_A(-2) := \mathcal{L}(-2 I_n - A, 0_{K^n})$
+    \item $\mathcal{L}
+    \begin{pmatrix}
+        \begin{pmatrix}
+            -5&-1&-3\\
+            0&0&-1\\
+            0&0&-5
+
+        \end{pmatrix},\begin{pmatrix}
+                          0\\0\\0
+        \end{pmatrix}
+    \end{pmatrix}$
+    \item Es resultieren drei Gleichungen \newline
+    \begin{enumerate}[label=(\roman*)]
+        \item $-5x_1-x_2-3x_3=0\Leftrightarrow x_1=-\frac{1}{5}x_2-\frac{3}{5}x_3$
+        \item $-x_3=0\Leftrightarrow x_3=0$
+        \item $-5x_3=0\Leftrightarrow x_3=0$
+    \end{enumerate}
+    \item Wir setzten die freie Variable $\lambda = x_2$
+    \item Bestimmung Lösungsmenge \newline
+    \item $\mathcal{L}(-2 I_n - A, 0_{K^n})=\left\{\begin{pmatrix}
+                                                  -\frac{1}{5}\lambda \\
+                                                  \lambda \\
+                                                  0
+
+    \end{pmatrix}:\lambda \in K\right\} = \left\{\begin{pmatrix}
+                                                                                                        -\frac{1}{5} \\
+                                                                                                        1 \\
+                                                                                                        0
+
+    \end{pmatrix}\lambda:\lambda \in K\right\} = \left\langle \begin{pmatrix}
+                                                                                                                                                                      -\frac{1}{5} \\
+                                                                                                                                                                      1 \\
+                                                                                                                                                                      0
+
+    \end{pmatrix} \right\rangle$
+\end{enumerate}

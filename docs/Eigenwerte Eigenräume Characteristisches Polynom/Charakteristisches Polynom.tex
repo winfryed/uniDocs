@@ -1,0 +1,21 @@
+
+\section{Charakteristisches Polynom}
+\subsection{Definition}
+Seien K ein Körper, $n\in \mathbb{N}_\geq1$ und $A=(\alpha_{ij})_{i,j} \in M_n(K)$. Betrachte über dem Polynomring
+$K[X]$ die $n \times n$-Matrix
+\[
+    XI_n-A=\begin{pmatrix}
+               X-\alpha_{11}&-\alpha_{12}&\dots&-\alpha_{1n}\\
+               -\alpha_{21}&X-\alpha_{22}&\dots&-\alpha_{2n}\\
+               \vdots&\vdots&&\vdots\\
+               -\alpha_{n1}&-\alpha_{n2}&\dots&X-\alpha_{nn}\\
+    \end{pmatrix} \in M_n(K[X]).
+\]
+Deren Determinante
+\[\chi_A(X):=det(XI_n-A)\]
+ist ein Polynom vom Grad n in K[X] und heißt charakteristisches Polynom von A.
+
+\subsection{Eigenwertbestimmung einer Matrix}
+Es gilt:
+
+"$\lambda$ ist Eigenwert von A" $\Leftrightarrow$ "$\lambda$ ist Nullstelle von $\chi_A(X)$"
