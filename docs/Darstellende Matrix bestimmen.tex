@@ -1,0 +1,60 @@
+%! Author = $Matthias Weigt
+%! Date = 17.08.2021
+
+% Preamble
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+
+% Document
+\begin{document}
+    \title{Bestimmung der darstellenden Matrix}
+    \maketitle
+    
+    \section{Gegeben:}
+
+    \begin{itemize}
+        \item 2 R-Vektorräume W und V, Basis b von W, Basis a von V.
+        \item Eine R-Lineare Abbildung $f: W\rightarrow$ V.
+    \end{itemize}
+
+
+    \section{Gesucht:}
+    \begin{itemize}
+        \item Die abbildene Matrix $M^{b}_a(f)$
+    \end{itemize}
+    \section{Vorgehensweise}
+    Gegeben seien die lineare Abbildung:
+    \[f:\mathbb{R}^3\rightarrow V, \begin{pmatrix}\alpha\\\beta\\\gamma\\\end{pmatrix} \rightarrow \alpha - \gamma + 2(2\beta + 3\gamma)X\]
+    sowie die Startbasis \[b := (e3,e2,e1 +e2) \: von \:\mathbb{R}^3\]
+    und die Zielbasis \[a := (X ,1) \:von\: V\]
+    wobei $e_i$ den i-ten Einheitsvektor in $\mathbb{R}^3$ bezeichnet (mit $i\in\{1,2,3\}$).
+
+    \subsection{Alle Einträge der Startbasis b komponentenweise in f einsetzen (Hierbei sollten mehrere Gleichungen entstehen)}
+
+    \begin{enumerate}
+        \item $f (e3) = -1 +3X=3X-1$
+        \item $f (e2) = 0 +2X=2X+0$
+        \item $f (e1 +e2) = 1 +2X=2X+1$
+    \end{enumerate}
+
+    \subsection{Bilde für jede entstandene Gleichung eine Linearkombination aus der Zielbasis a.}
+
+    \begin{enumerate}
+        \item $3X -1=3a_1-a_2\rightarrow\begin{pmatrix} 3\\-1\\\end{pmatrix}$
+        \item $2X +0=2a_1+0a_2\rightarrow\begin{pmatrix} 2\\0\\\end{pmatrix}$
+        \item $2X +1=2a_1+1a_2\rightarrow\begin{pmatrix} 2\\1\\\end{pmatrix}$
+    \end{enumerate}
+
+
+    \subsection{Übertrage die Koeffizenten der Gleichung in eine Matrix}
+
+    \[M^{b}_a(f)=\begin{pmatrix} 3&2&2\\-1&0&1\\\end{pmatrix},\]
+
+\end{document}

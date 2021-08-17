@@ -1,0 +1,68 @@
+%! Author = $Matthias Weigt
+%! Date = 17.08.2021
+
+% Preamble
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{wasysym}
+
+% Document
+\begin{document}
+
+    \section{Rechenregeln zu den komplexen Zahlen}
+
+    Seien $z_1$ = 2 - 3i und $z_2$ = 4 + 5i komplexe Zahlen, so gilt: \newline
+
+    \subsection{Addition / Subtraktion}
+
+    $z_1 \pm z_2 = (a_1 + b_1 * i) \pm (a_2 + b_2 * i) = (a_1 \pm a_2) + (b_1 \pm b_2) * i$ \newline
+    \newline
+    Beispiel:
+    \begin{itemize}
+        \item $z_1 + z_2 = (2 + 4) + (-3 + 5) * i = 6 + 2i$
+        \item $z_1 - z_2 = (2 - 4) + (-3 - 5) * i = -2 - 8i$
+    \end{itemize}
+
+
+    \subsection{Multiplikation}
+
+    $ z_1 * z_2 = (a_1 * a_2 - b_1 * b_2) + (a_1*b_2 + a_2 *b_1) * i$ \newline
+    \newline
+    Beispiel:
+
+    \begin{itemize}
+        \item $z_1 * z_2 = (2 * 4 - -3 * 5) + (2 * 5 + 4 * (-3)) * i = 23 - 2i$
+    \end{itemize}
+
+    \subsection{Betrag}
+
+    $|z_1| = \sqrt{a^2 + b^2}$  \newline
+    \newline
+    Beispiel:
+    \begin{itemize}
+        \item $|z_1| = \sqrt{2^2 + (-3)^2} = \sqrt{13}$ ; $\overline{z_1} = 2 + 3i$
+    \end{itemize}
+
+    \subsection{Kunjugat}
+
+    $\overline{z_1} = a_1 - b_1 * i$ \newline
+    \newline
+    Beispiel:
+    \begin{itemize}
+        \item $|z_1| = \overline{z_2} = 4 - 5i$
+    \end{itemize}
+
+    \subsection{Weiteres}
+    \begin{itemize}
+        \item $ \overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$
+        \item $ \overline{z_1 * z_2} = \overline{z_1} * \overline{z_2}$
+        \item $|z_1 * z_2| = |z_1| * |z_2|$
+    \end{itemize}
+
+
+\end{document}
