@@ -1,0 +1,51 @@
+%! Author = $Matthias Weigt
+%! Date = 18.08.2021
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+
+% Document
+\begin{document}
+
+    \section{Begrifflichkeiten bei Folgen}
+    \subsection{Beschränktheit}
+    Eine Reelle Folge $(a_n)_{n\in \mathbb{N}}$ heißt beschränkt, falls gilt:
+    \[
+        \exists C \in \mathbb{R}_{>0}:\forall n \in \mathbb{N}:|a_n|\leq C.
+    \]
+    \subsection{Konvergenz}
+    \begin{enumerate}[label=(\alph*)]
+        \item Sei $a\in \mathbb{R}$. Wir sagen, dass $(a_n)_{n\in\mathbb{N}}$ gegen a konvergiert, falls folgene Eigenschaft gilt: \newline
+        \hspace*{10mm}$\forall\varepsilon>0:\exists n_0\in \mathbb{N}:\forall n \geq n_0:|a-a_n|<\varepsilon$
+        \item Wenn ein $a\in\mathbb{R}$ exisitert, so dass $(a_n)_{n\in\mathbb{N}}$ gegen a kovergiert, nennt man die Folge kovergent.
+        \item "nicht konvergent"$\Leftrightarrow$"divergent"
+        \item Konvergiert $(a_n)_{n\in\mathbb{N}}$ gegen a, so schreiben wir \newline
+        \hspace*{10mm} $\lim \limits_{n \to \infty}a_n:=a$ und $a_n\xrightarrow[n \rightarrow \infty]\: a$
+    \end{enumerate}
+    \subsubsection{Nullfolge}
+    Konvergiert $(a_n)_{n\in\mathbb{N}}$ gegen 0, so nennen wir $(a_n)_{n\in\mathbb{N}}$ eine Nullfolge.
+    \subsubsection{Differenzierbarkeit}
+    Seien $a,b\in\mathbb{R}$ mit a<b. Seien $f:[a,b]\rightarrow\mathbb{R}$ eine Funktion und $x\in[a,b]$. \newline
+    Dann heißt f differenzierbar in x, falls $\y\in\mathbb{R}$ existiert mit \newline\newline
+    \hspace*{10mm} $\lim \limits_{n \to \infty}\frac{f(x+\varepsilon_n)-f(x)}{\varepsilon_n}$ \newline\newline
+    für jede Nullfolge mit $(\varepsilon_n)_{n\in\mathbb{N}}$ mit $\varepsilon_n\neq 0 \forall n\in\mathbb{N}$. In diesem Fall
+    heißt die y auch die Ableitung von $f$ in x und wird mit $f'(x)$ bezeichnet.
+
+    \subsection{Teilfolgen und Häufungspunkte}
+    \subsubsection{Teilfolgen}
+    Seien $(a_n)_{n\in\mathbb{N}}$ und $(b_n)_{n\in\mathbb{N}}$ Folgen in $\mathbb{R}$. Wir nennen $(b_n)_{n\in\mathbb{N}}$ eine Teilfolge von $(a_n)_{n\in\mathbb{N}}$, falls\newline\newline
+    \hspace*{10mm} $(b_n)_{n\in\mathbb{N}}=(a_{s(n)})_{n\in\mathbb{N}}$ \newline\newline
+    für eine streng monoton steigende Funktion $s:\mathbb{N}\rightarrow\mathbb{N}$ gilt.
+    \subsubsection{Häufungspunkt}
+    Sei $(a_n)_{n\in\mathbb{N}}$ eine Folge in $\mathbb{R}$ und sei $a\in\mathbb{R}$. Dann heißt a Häufungspunkt von $(a_n)_{n\in\mathbb{N}}$, falls eine
+    Teilfolge von $(a_n)_{n\in\mathbb{N}}$ existiert die gegen $a$ konvergiert.
+\end{document}

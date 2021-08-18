@@ -1,0 +1,30 @@
+%! Author = $Matthias Weigt
+%! Date = 18.08.2021
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+
+% Document
+\begin{document}
+
+    \section{Nützlicher Code}
+    $\neq \longrightarrow$ \backslash neq \newline
+    $\sum\limits_{i=0}^{n}\longrightarrow$ \backslash sum \backslash limits\textunderscore\{i=0\}\wedge\{n\}$
+    \subsection{Enumerations}
+    $\backslash userpackage\{enumitem\}$
+    \begin{itemize}
+        \item $[label=(\backslash alph*)]$
+        \item $[label=(\backslash Alph*)]$
+        \item $[label=(\backslash roman*)]$
+    \end{itemize}
+
+\end{document}

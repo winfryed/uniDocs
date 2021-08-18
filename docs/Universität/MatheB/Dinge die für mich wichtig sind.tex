@@ -1,0 +1,71 @@
+%! Author = $Matthias Weigt
+%! Date = 18.08.2021
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a3paper, left=2cm, right=2cm, top=2cm]{geometry}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+
+% Document
+\begin{document}
+    \title{Sammlung der für mich am wichtigsten erscheinenden Definitionen}
+    \maketitle
+    \subsection{Quotientenregel}
+    $f(x)=\frac{u(x)}{v(x)}\:\longrightarrow\:f'(x)=\frac{u'(x)\cdot v(x)-u(x)\cdot v'(x)}{v^2(x)}$
+    \subsection{Untervektorraum Kriterium}
+    Sei V ein K-Vektorraum. \newline
+    U ist genau dann ein Untervektorraum von V wenn gilt:
+    \begin{enumerate}[label=(\roman*)]
+        \item $0_V\in U\Leftrightarrow U \neq \emptyset$
+        \item $\forall \lambda \in K, v \in U: \lambda v \in U$
+        \item $\forall v,w \in U: w+v \in U$
+    \end{enumerate}
+    \subsection{Linearitätskriterium}
+    Seien W, V zwei K-Vekorräume.
+    Eine Abbildung $f:W\rightarrow V$ ist Linear wenn gilt:
+    \begin{enumerate}[label=(\roman*)]
+    \item $\forall \lambda \in K, v\in W : f(\lambda v)=\lambda f(v)$
+    \item $\forall v,w\in W : f(v+w) = f(v)+f(w)$
+    \end{enumerate}
+    \subsection{Dimensionsformel}
+    Für eine lineare Abbildung $f:W\rightarrow V$ zwischen zwei K-Vektorräumen W und V gilt \newline\newline
+    $dim_kW = rk_f + dim_Kkerf$
+    \subsection{2x2 Matrix invertieren}
+    Sei M eine Matrix mit $M=\begin{pmatrix}
+                                 a&b\\c&d
+    \end{pmatrix}$ so ist die inverse $M^{-1}=\frac{1}{ad-bc}\begin{pmatrix}
+                                                                 d&-b\\-c&a
+    \end{pmatrix}$
+    \subsection{Laplace Formel}
+    $detA=\sum\limits_{j=1}^{n}(-1)^{i+j}\cdot detA_{ij}\cdot\alpha_{ij}$
+    \subsection{Charakteristisches Polynom}
+    Das Charakteristisches Polynom ist definiert als:
+    \[\chi_A(X):=det(XI_n-A)\]
+    \subsection{Rechenvorschrift bestimmung Eigenraum zum Eigenwert $\lambda$}
+    Zum berechnen eines Eigenraums zum Eigenwert $\lambda$ verwendet man die Formel:
+    \[Eig_A(\lambda) := \mathcal{L}(\lambda I_n - A, 0_{K^n})\]
+    \subsection{Lineare Unabhänigkeit}
+    Sei V ein K-Vektorraum und $a:=(a_1,\dots,a_n)$ ein Tupel von Vektoren auf V. \newline
+    Dann ist a linear unabhängig wenn gilt:
+    \[
+        \forall \lambda_1,\dots,\lambda_n\in K: \sum\limits_{i = 1}^{n}\lambda_ja_j=0_V\Rightarrow\lambda_1=\dots=\lambda_n=0_K
+\]
+    \subsection{Adjunkte Matrix}
+    Für die Adjunkte Matrix gilt die Formel: $AA^*=A^*A=(detA)I_n$
+    \subsection{Kern von f}
+    Seien K ein Körper und $f:V\rightarrow W"$ eine K-Lineare Abbildung zwischen den K-Vektorräumen $V,W$. \newline
+    Der Kern von v ist:
+    \[
+        ker\:f:=f^{-1}(\{0_W\})=\{v\inV | f(v)=0_W\}
+    \]
+
+
+
+\end{document}
