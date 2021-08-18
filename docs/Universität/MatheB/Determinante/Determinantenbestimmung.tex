@@ -2,7 +2,7 @@
 \subsection{Für $n \geq 4 ;\ n\times n$ Matrizen} \newline
 \newline
 \hspace*{10mm}%
-Definition: \[detA = \sum_{j=1}^{n}\cdot(-1)^{i+j}\cdotdetA_{ij}\cdot\alpha_{ij} \] \newline
+Definition: \[detA = \sum_{j=1}^{n}(-1)^{i+j}\cdot detA_{ij}\cdot\alpha_{ij} \] \newline
 \newline
 \subsubsection{Rechenvorschrift}
  Bei dem Entwickeln nach einer Zeile bieten sich solche an, welche viele Nullen haben, da die Spalten, welche diese teilen nicht entwickelt werden müssen.
@@ -57,5 +57,14 @@ oben (später rot) werden multplikativ subtrahiert.
     \alpha_{32} \end{pmatrix} \right )\] \newline
     \newline \[= \alpha_{11} \cdot \alpha_{22} \cdot \alpha_{33} + \alpha_{12} \cdot \alpha_{23} \cdot \alpha_{31} + \alpha_{13} \cdot \alpha_{21} \cdot \alpha_{32}
     - \alpha_{31} \cdot \alpha_{22} \cdot \alpha_{13} - \alpha_{32} \cdot \alpha_{23} \cdot \alpha_{11} - \alpha_{33} \cdot \alpha_{21} \cdot \alpha_{12}\]
-\end{enumerate}
+\end{enumerate}\newline
+\newline
+\subsection{Für $n = 2 ;\ n\times n$ Matrizen}
+
+\subsubsection{Rechenvorschrift}
+\[\begin{pmatrix}\alpha_{11} & \alpha_{12}\\\alpha_{21}  & \alpha_{22}\end{pmatrix} = {\color{red} \alpha_{11}} \cdot {\color{red} \alpha_{22}} -
+    {\color{green} \alpha_{21}} \cdot {\color{green} \alpha_{12}}\]
+
+
+
 
